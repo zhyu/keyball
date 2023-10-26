@@ -7,7 +7,7 @@ enum keyball39_keymap_layers {
     LAYER_SYMBOLS,
     LAYER_NAVNUM,
     LAYER_POINTER,
-}
+};
 
 #define _LSFT_HALF_ROW(K00, K01, K02, K03, K04) LSFT(K00), LSFT(K01), LSFT(K02), LSFT(K03), LSFT(K04)
 #define _TRANSPARENT_HALF_ROW_ _______, _______, _______, _______, _______
@@ -53,12 +53,13 @@ enum keyball39_keymap_layers {
     _TRANSPARENT_HALF_ROW_,                                           _TRANSPARENT_HALF_ROW_,                               \
     _TRANSPARENT_LEFT_LAST_ROW_, _TRANSPARENT_LEFT_THUMB_CLUSTER_,    _TRANSPARENT_RIGHT_THUMB_CLUSTER_, _TRANSPARENT_RIGHT_LAST_ROW_
 
+#define LAYOUT_wrapper(...) LAYOUT_universal(__VA_ARGS__)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [LAYER_BASE] = LAYOUT_universal(LAYOUT_LAYER_BASE),
-  [LAYER_SYMBOLS] = LAYOUT_universal(LAYOUT_LAYER_SYMBOLS),
-  [LAYER_NAVNUM] = LAYOUT_universal(LAYOUT_LAYER_NAVNUM),
-  [LAYER_POINTER] = LAYOUT_universal(LAYOUT_LAYER_POINTER),
+  [LAYER_BASE] = LAYOUT_wrapper(LAYOUT_LAYER_BASE),
+  [LAYER_SYMBOLS] = LAYOUT_wrapper(LAYOUT_LAYER_SYMBOLS),
+  [LAYER_NAVNUM] = LAYOUT_wrapper(LAYOUT_LAYER_NAVNUM),
+  [LAYER_POINTER] = LAYOUT_wrapper(LAYOUT_LAYER_POINTER),
 };
 // clang-format on
 
