@@ -40,10 +40,10 @@ enum keyball39_keymap_layers {
  * The left hand layer is the navigation layer.
  * The right hand layer is the numeral layer.
  */
-#define LAYOUT_LAYER_NAVNUM                                                                                    \
-    KC_DELETE, KC_HOME, KC_UP, KC_END, MEH(KC_T),                       _______, KC_7, KC_8, KC_9, MEH(KC_P),  \
-    KC_BACKSPACE, KC_LEFT, KC_DOWN, KC_RIGHT, _______,                  KC_MS_WH_DOWN, KC_4, KC_5, KC_6, KC_0, \
-    _______, KC_PAGE_UP, _______, KC_PAGE_DOWN, _______,                KC_MS_WH_UP, KC_1, KC_2, KC_3, KC_DOT, \
+#define LAYOUT_LAYER_NAVNUM                                                                                   \
+    KC_DELETE, KC_HOME, KC_UP, KC_END, MEH(KC_T),                       _______, KC_7, KC_8, KC_9, MEH(KC_P), \
+    KC_BACKSPACE, KC_LEFT, KC_DOWN, KC_RIGHT, _______,                  _______, KC_4, KC_5, KC_6, KC_0,      \
+    _______, KC_PAGE_UP, _______, KC_PAGE_DOWN, _______,                _______, KC_1, KC_2, KC_3, KC_DOT,    \
     _TRANSPARENT_LEFT_LAST_ROW_, LCA(KC_TAB), KC_TAB, MEH(KC_SPACE),    _TRANSPARENT_RIGHT_THUMB_CLUSTER_, _______,_______,_______, QK_BOOT
 
 /** \brief Mouse emulation and pointer functions. */
