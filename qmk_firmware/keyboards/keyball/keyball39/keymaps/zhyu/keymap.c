@@ -44,12 +44,12 @@ enum keyball39_keymap_layers {
     KC_DELETE, KC_HOME, KC_UP, KC_END, MEH(KC_T),                       _______, KC_7, KC_8, KC_9, MEH(KC_P), \
     KC_BACKSPACE, KC_LEFT, KC_DOWN, KC_RIGHT, _______,                  _______, KC_4, KC_5, KC_6, KC_0,      \
     _______, KC_PAGE_UP, _______, KC_PAGE_DOWN, _______,                _______, KC_1, KC_2, KC_3, KC_DOT,    \
-    _TRANSPARENT_LEFT_LAST_ROW_, LCA(KC_TAB), KC_TAB, MEH(KC_SPACE),    _TRANSPARENT_RIGHT_THUMB_CLUSTER_, _______,_______,_______, QK_BOOT
+    _TRANSPARENT_LEFT_LAST_ROW_, LCA(KC_TAB), KC_TAB, MEH(KC_SPACE),    _TRANSPARENT_RIGHT_THUMB_CLUSTER_, _TRANSPARENT_RIGHT_LAST_ROW_
 
 /** \brief Mouse emulation and pointer functions. */
 #define LAYOUT_LAYER_POINTER                                                                                                \
     _TRANSPARENT_HALF_ROW_,                                           _TRANSPARENT_HALF_ROW_,                               \
-    _TRANSPARENT_HALF_ROW_,                                           KC_MS_BTN3, KC_MS_BTN1, KC_MS_BTN2, SCRL_TO, SCRL_MO, \
+    _TRANSPARENT_HALF_ROW_,                                           _______, KC_MS_BTN1, KC_MS_BTN2, KC_MS_BTN3, SCRL_MO, \
     _TRANSPARENT_HALF_ROW_,                                           _TRANSPARENT_HALF_ROW_,                               \
     _TRANSPARENT_LEFT_LAST_ROW_, _TRANSPARENT_LEFT_THUMB_CLUSTER_,    _TRANSPARENT_RIGHT_THUMB_CLUSTER_, _TRANSPARENT_RIGHT_LAST_ROW_
 
