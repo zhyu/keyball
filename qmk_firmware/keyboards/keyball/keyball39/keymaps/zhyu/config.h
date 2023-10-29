@@ -26,3 +26,13 @@
 #define ONESHOT_TAP_TOGGLE 2
 
 #define KEYBALL_CPI_DEFAULT 1000
+
+// enabling SPLIT_USB_DETECT would cause issues with the USB hub.
+// It's enabled by default to make the default firmware compatible with different ARM boards,
+// ref: https://github.com/Yowkees/keyball/issues/169
+#ifdef SPLIT_USB_DETECT
+#    undef SPLIT_USB_DETECT
+#    ifdef SPLIT_USB_TIMEOUT
+#        undef SPLIT_USB_TIMEOUT
+#    endif
+#endif
