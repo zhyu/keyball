@@ -12,7 +12,10 @@
 // #    define RGBLIGHT_EFFECT_ALTERNATING
 // #    define RGBLIGHT_EFFECT_TWINKLE
 
-#    define RGBLIGHT_DEFAULT_MODE (RGBLIGHT_EFFECT_RAINBOW_SWIRL + 2)
+// effect speed: mode 0=1 < 2=3 < 4=5
+// hue change direction: 0=2=4 (red -> purple -> blue -> green -> yellow -> red), 1=3=5 (red -> yellow -> green -> blue -> purple -> red)
+// ref: https://github.com/qmk/qmk_firmware/blob/46dedfaaa479332159fde74481f74d35215388b5/quantum/rgblight/rgblight.c#L1220-L1243
+#    define RGBLIGHT_DEFAULT_MODE (RGBLIGHT_EFFECT_RAINBOW_SWIRL + 4)
 #    define RGBLIGHT_SLEEP
 #endif
 
