@@ -17,6 +17,12 @@
 // ref: https://github.com/qmk/qmk_firmware/blob/46dedfaaa479332159fde74481f74d35215388b5/quantum/rgblight/rgblight.c#L1220-L1243
 #    define RGBLIGHT_DEFAULT_MODE (RGBLIGHT_EFFECT_RAINBOW_SWIRL + 4)
 #    define RGBLIGHT_SLEEP
+
+// limit max brightness to keep power consumption reasonable and prevent flickering
+#    ifdef RGBLIGHT_LIMIT_VAL
+#        undef RGBLIGHT_LIMIT_VAL
+#    endif
+#    define RGBLIGHT_LIMIT_VAL 120
 #endif
 
 #define TAP_CODE_DELAY 5
