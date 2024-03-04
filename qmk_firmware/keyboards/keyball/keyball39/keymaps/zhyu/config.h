@@ -48,3 +48,7 @@
 #        undef SPLIT_USB_TIMEOUT
 #    endif
 #endif
+
+// the default behavior changed in https://github.com/qmk/qmk_firmware/pull/22775
+// so we need the following
+#define SPLIT_HAND_MATRIX_GRID_LOW_IS_LEFT
