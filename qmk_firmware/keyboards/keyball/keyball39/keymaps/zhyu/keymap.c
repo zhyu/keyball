@@ -16,12 +16,22 @@ enum keyball39_keymap_layers {
 #define _TRANSPARENT_LEFT_THUMB_CLUSTER_ _______, _______, _______
 #define _TRANSPARENT_RIGHT_THUMB_CLUSTER_ _______, _______
 
+// Left-hand home row mods
+#define ALT_S LALT_T(KC_S)
+#define GUI_D LGUI_T(KC_D)
+#define CTL_F LCTL_T(KC_F)
+
+// Right-hand home row mods
+#define CTL_J RCTL_T(KC_J)
+#define GUI_K RGUI_T(KC_K)
+#define ALT_L LALT_T(KC_L)
+
 // clang-format off
 /** \brief QWERTY layout (3 rows, 10 columns). */
-#define LAYOUT_LAYER_BASE                                                                                                                   \
-    KC_Q,            KC_W,    KC_E,    KC_R,    KC_T,                             KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,                 \
-    LCTL_T(KC_A),    KC_S,    KC_D,    KC_F,    KC_G,                             KC_H,    KC_J,    KC_K,    KC_L,    RCTL_T(KC_SEMICOLON), \
-    LGUI_T(KC_Z),    KC_X,    KC_C,    KC_V,    KC_B,                             KC_N,    KC_M, KC_COMM,  KC_DOT,    RGUI_T(KC_SLSH),      \
+#define LAYOUT_LAYER_BASE                                                                                                         \
+    KC_Q,    KC_W,     KC_E,     KC_R,     KC_T,                             KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,            \
+    KC_A,    ALT_S,    GUI_D,    CTL_F,    KC_G,                             KC_H,    CTL_J,    GUI_K,    ALT_L,    KC_SEMICOLON, \
+    KC_Z,    KC_X,     KC_C,     KC_V,     KC_B,                             KC_N,    KC_M, KC_COMM,  KC_DOT,    KC_SLSH,         \
     _TRANSPARENT_LEFT_LAST_ROW_, OSM(MOD_LSFT), KC_SPACE, OSL(LAYER_SYMBOLS),     OSL(LAYER_NAVNUM), KC_ENTER, _TRANSPARENT_RIGHT_LAST_ROW_
 
 /**
