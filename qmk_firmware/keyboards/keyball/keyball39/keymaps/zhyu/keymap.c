@@ -15,6 +15,7 @@ enum keyball39_keymap_layers {
 #define _TRANSPARENT_RIGHT_LAST_ROW_ _______, _______, _______, _______
 #define _TRANSPARENT_LEFT_THUMB_CLUSTER_ _______, _______, _______
 #define _TRANSPARENT_RIGHT_THUMB_CLUSTER_ _______, _______
+#define _MOUSE_RIGHT_HALF_ROW_ _______, KC_MS_BTN1, SCRL_MO, KC_MS_BTN3, KC_MS_BTN2
 
 // Left-hand home row mods
 #define ALT_S LALT_T(KC_S)
@@ -57,10 +58,10 @@ enum keyball39_keymap_layers {
     _TRANSPARENT_LEFT_LAST_ROW_, LCA(KC_TAB), KC_TAB, MEH(KC_SPACE),    _TRANSPARENT_RIGHT_THUMB_CLUSTER_, _TRANSPARENT_RIGHT_LAST_ROW_
 
 /** \brief Mouse emulation and pointer functions. */
-#define LAYOUT_LAYER_POINTER                                                                                                \
-    _TRANSPARENT_HALF_ROW_,                                           _TRANSPARENT_HALF_ROW_,                               \
-    _TRANSPARENT_HALF_ROW_,                                           _______, KC_MS_BTN1, KC_MS_BTN2, SCRL_MO, KC_MS_BTN3, \
-    _TRANSPARENT_HALF_ROW_,                                           _TRANSPARENT_HALF_ROW_,                               \
+#define LAYOUT_LAYER_POINTER                                                                  \
+    _TRANSPARENT_HALF_ROW_,                                           _TRANSPARENT_HALF_ROW_, \
+    _TRANSPARENT_HALF_ROW_,                                           _MOUSE_RIGHT_HALF_ROW_, \
+    _TRANSPARENT_HALF_ROW_,                                           _TRANSPARENT_HALF_ROW_, \
     _TRANSPARENT_LEFT_LAST_ROW_, _TRANSPARENT_LEFT_THUMB_CLUSTER_,    _TRANSPARENT_RIGHT_THUMB_CLUSTER_, _TRANSPARENT_RIGHT_LAST_ROW_
 
 #define LAYOUT_wrapper(...) LAYOUT_universal(__VA_ARGS__)
