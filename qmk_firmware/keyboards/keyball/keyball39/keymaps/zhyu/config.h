@@ -25,6 +25,9 @@
 #    define RGBLIGHT_LIMIT_VAL 120
 #endif
 
+// inherit from the default config, which sets this param to fix auto shift issues with remote desktop
+// ref: https://github.com/Yowkees/keyball/pull/132
+// Although I don't use auto shift, I have not found any issues with it.
 #define TAP_CODE_DELAY 5
 
 #ifdef POINTING_DEVICE_ENABLE
