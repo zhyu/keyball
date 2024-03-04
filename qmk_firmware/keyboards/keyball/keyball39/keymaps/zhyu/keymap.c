@@ -59,7 +59,7 @@ enum keyball39_keymap_layers {
 /** \brief Mouse emulation and pointer functions. */
 #define LAYOUT_LAYER_POINTER                                                                                                \
     _TRANSPARENT_HALF_ROW_,                                           _TRANSPARENT_HALF_ROW_,                               \
-    _TRANSPARENT_HALF_ROW_,                                           _______, KC_MS_BTN1, KC_MS_BTN2, KC_MS_BTN3, SCRL_MO, \
+    _TRANSPARENT_HALF_ROW_,                                           _______, KC_MS_BTN1, KC_MS_BTN2, SCRL_MO, KC_MS_BTN3, \
     _TRANSPARENT_HALF_ROW_,                                           _TRANSPARENT_HALF_ROW_,                               \
     _TRANSPARENT_LEFT_LAST_ROW_, _TRANSPARENT_LEFT_THUMB_CLUSTER_,    _TRANSPARENT_RIGHT_THUMB_CLUSTER_, _TRANSPARENT_RIGHT_LAST_ROW_
 
